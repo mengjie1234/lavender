@@ -1,0 +1,22 @@
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32.28px" height="32.279px" viewBox="0 0 32.28 32.279" enable-background="new 0 0 32.28 32.279" xml:space="preserve">
+<g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M0,16.14C0,7.23,7.23,0,16.14,0s16.14,7.23,16.14,16.14
+		c0,8.92-7.229,16.14-16.14,16.14S0,25.06,0,16.14z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#76438F" d="M24.066,6.612L12.358,8.726v12.146
+		c-0.595-0.146-1.276-0.133-1.954,0.098c-1.575,0.533-2.511,1.973-2.089,3.216c0.421,1.243,2.039,1.817,3.614,1.284
+		c1.341-0.455,2.209-1.566,2.18-2.653l0.029,0.03V12.316l8.117-1.418v8.275c-0.583-0.133-1.245-0.113-1.903,0.11
+		c-1.576,0.533-2.511,1.974-2.09,3.217c0.422,1.242,2.039,1.816,3.615,1.283c1.379-0.468,2.267-1.631,2.183-2.746h0.006V6.612z"/>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M0,16.14C0,7.23,7.23,0,16.14,0s16.14,7.23,16.14,16.14c0,8.92-7.229,16.14-16.14,16.14S0,25.06,0,16.14z"
+				/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		
+			<line clip-path="url(#SVGID_2_)" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#76438F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-1.86" y1="-1.86" x2="34.14" y2="34.14"/>
+	</g>
+</g>
+</svg>

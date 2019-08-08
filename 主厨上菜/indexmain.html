@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="swiper/css/swiper.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/indexmain.css">
+    <title>菜单下载</title>
+</head>
+
+<body>
+   
+
+    <canvas></canvas>
+    <!-- 整个页面的大盒子 -->
+    <div class="main">
+
+        <!-- 上面的关闭按钮 -->
+        <div class="btn">
+            <img src="images/close_btn_black.svg" alt="">
+            <p>close</p>
+        </div>
+        <!-- 中间部分 -->
+        <div class="menu">
+            <h3>菜單下載</h3>
+            <h4>Download</h4>
+            <p>這兒提供了薰衣草森林各分店的主廚菜單，請點選下方的分店，即可下載該分店菜單喔</p>
+        </div>
+        <!-- 三个大圆圈 -->
+        <ul class="circle">
+            <li>
+                <a href="index.html" target="_blank">
+                    <img src="images/forest_list_now.svg" alt="">
+                    <div class="centerpic">
+                        <img src="images/f02_svg.png" alt="">
+                        <p>台中新社店</p>
+                    </div>
+                    <span class="reverse">
+                        <div class="smallpic">
+                            <img src="images/food_menu_btn.png" alt="">
+                        </div>
+                        <h5>我要下載</h5>
+                        <h6>MENU</h6>
+
+                    </span>
+
+
+                </a>
+            </li>
+            <li>
+                <a href="201904_menu_M.pdf" target="_blank">
+                    <img src="images/forest_list_now.svg" alt="">
+                    <div class="centerpic">
+                        <img src="images/f01_svg.png" alt="">
+                        <p>新竹尖石店</p>
+                    </div>
+                    <span class="reverse">
+                        <div class="smallpic">
+                            <img src="images/food_menu_btn.png" alt="">
+                        </div>
+                        <h5>我要下載</h5>
+                        <h6>MENU</h6>
+
+                    </span>
+
+
+                </a>
+            </li>
+            <li>
+                <a href="201905_menu_S.pdf" target="_blank">
+                    <img src="images/forest_list_now.svg" alt="">
+                    <div class="centerpic">
+                        <img src="images/f03_svg.png" alt="">
+                        <p>苗栗明德店</p>
+                    </div>
+                    <span class="reverse">
+                        <div class="smallpic">
+                            <img src="images/food_menu_btn.png" alt="">
+                        </div>
+                        <h5>我要下載</h5>
+                        <h6>MENU</h6>
+
+                    </span>
+
+
+                </a>
+            </li>
+        </ul>
+        <!-- 最后的箭头 -->
+        <div class="arrow">
+            <div class="left fl">
+                <img src="images/arrow_prev.svg" alt="">
+                <p>上一頁</p>
+            </div>
+            <div class="right fr">
+                <img src="images/arrow_next.svg" alt="">
+                <p>下一頁</p>
+            </div>
+            <div class="line"></div>
+            <div class="yuan"></div>
+        </div>
+
+
+    </div>
+    <!-- <canvas></canvas> -->
+
+    <script src="js/stopExecutionOnTimeout.js"></script>
+    <!-- <script src="js/iscroll.js"></script> -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <!-- <script src="swiper/js/swiper.js"></script> -->
+    <script>
+        $(function () {
+            $(".circle li").mouseenter(function () {
+                $(this).find("span").stop().fadeIn(1000);
+            })
+            $(".circle li").mouseleave(function () {
+                $(this).find("span").stop().fadeOut(1000);
+            })
+            $(".arrow .left").mouseenter(function () {
+                $(".arrow .left").stop().animate({
+                    marginLeft: 0,
+                    opacity: 1
+                })
+            })
+            $(".arrow .left").mouseleave(function () {
+                $(".arrow .left").stop().animate({
+                    marginLeft: 30,
+                    opacity: 0.5
+                })
+            })
+            $(".arrow .right").mouseenter(function () {
+                $(".arrow .right").stop().animate({
+                    marginRight: 0,
+                    opacity: 1
+                })
+            })
+            $(".arrow .right").mouseleave(function () {
+                $(".arrow .right").stop().animate({
+                    marginRight: 30,
+                    opacity: 0.5
+                })
+            })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        })
+        var canvas = document.querySelector('canvas');
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+        c = canvas.getContext('2d');
+
+        window.addEventListener('resize', function () {
+            canvas.height = window.innerHeight;
+            canvas.width = window.innerWidth;
+
+            initCanvas();
+        });
+
+        var mouse = {
+            x: undefined,
+            y: undefined
+        };
+
+        window.addEventListener('mousemove',
+            function (event) {
+                mouse.x = event.x;
+                mouse.y = event.y;
+                drawCircles();
+            });
+
+        window.addEventListener("touchmove",
+            function (event) {
+                let touch = event.touches[0];
+                mouse.x = touch.clientX;
+                mouse.y = touch.clientY;
+                drawCircles();
+            });
+
+
+        function Circle(x, y, radius, vx, vy, rgb, opacity, birth, life) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.minRadius = radius;
+            this.vx = vx;
+            this.vy = vy;
+            this.birth = birth;
+            this.life = life;
+            this.opacity = opacity;
+
+            this.draw = function () {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, Math.PI * 2, false);
+                c.fillStyle = 'rgba(' + rgb + ',' + this.opacity + ')';
+                c.fill();
+            };
+
+            this.update = function () {
+                if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+                    this.vx = -this.vx;
+                }
+
+                if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+                    this.vy = -this.vy;
+                }
+
+                this.x += this.vx;
+                this.y += this.vy;
+
+                this.opacity = 1 - (frame - this.birth) * 1 / this.life;
+
+                if (frame > this.birth + this.life) {
+                    for (let i = 0; i < circleArray.length; i++) {
+                        if (this.birth == circleArray[i].birth && this.life == circleArray[i].life) {
+                            circleArray.splice(i, 1);
+                            break;
+                        }
+                    }
+                } else {
+                    this.draw();
+                }
+            };
+
+        }
+
+        var circleArray = [];
+
+        function initCanvas() {
+            circleArray = [];
+        }
+
+        var colorArray = [
+            '124,70,151',
+            '124,50,100',
+            '255,255,255'];
+
+
+        function drawCircles() {
+            for (let i = 0; i < 6; i++) {
+                let radius = Math.floor(Math.random() * 4) + 2;
+                let vx = Math.random() * 2 - 1;
+                let vy = Math.random() * 2 - 1;
+                let spawnFrame = frame;
+                let rgb = colorArray[Math.floor(Math.random() * colorArray.length)];
+                let life = 100;
+                circleArray.push(new Circle(mouse.x, mouse.y, radius, vx, vy, rgb, 1, spawnFrame, life));
+
+            }
+        }
+
+        var frame = 0;
+        function animate() {
+            requestAnimationFrame(animate);
+            frame += 1;
+            c.clearRect(0, 0, innerWidth, innerHeight);
+            for (let i = 0; i < circleArray.length; i++) {
+                circleArray[i].update();
+            }
+
+        }
+
+        initCanvas();
+        animate();
+
+        // This is just for demo purposes :
+        for (let i = 1; i < 110; i++) {
+            (function (index) {
+                setTimeout(function () {
+                    mouse.x = 100 + i * 10;
+                    mouse.y = 100;
+                    drawCircles();
+                }, i * 10);
+            })(i);
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

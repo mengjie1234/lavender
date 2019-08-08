@@ -1,0 +1,209 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+
+body{
+    background-color: #fbedd6;
+    /* font-family:  sans-serif; */
+}
+.container{
+    margin: 0 auto;
+}
+/* 上面大图美食部分 */
+.top{
+    /* background-color: cyan; */
+    height: 700px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.top .left{
+    height: 500px;
+    width: 400px;
+}
+.top .right .rtop{
+    width: 200px;
+    height: 100px;
+
+}
+.top .right .rdown{
+    height: 500px;
+    width: 700px;
+    margin-top: 30px;
+}
+.top .icon{
+    width: 228px;
+    height: 100px;
+    position: absolute;
+    bottom: 60px;
+    left: 405px;
+
+}
+/* 中间餐桌上的风景 */
+.center{
+    height: 700px;
+    /* background-color: yellowgreen; */
+    position: relative;
+}
+.center .cright{
+    width: 50%;
+    height: 700px;
+}
+.center .cright img{
+    height: 700px;
+}
+.center .cleft{
+    width: 400px;
+    height: 400px;
+    /* display: flex; */
+    margin-top: 100px;
+}
+.center .cleft div{
+    /* flex: 1; */
+    height: 50%;
+    width: 50%;
+    float: left;
+    /* margin-right: 10px; */
+    /* box-sizing: border-box; */
+}
+.center .cword{
+    width: 56px;
+    height: 363px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    
+
+}
+.center .bword{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+}
+/* 柠檬香草烤全鸡 */
+.chiken{
+    height: 926px;
+    /* background-color: cyan; */
+}
+.chiken .bright{
+    width: 50%;
+}
+.chiken .bimg{
+    width: 600px;
+    height: 450px;
+}
+.chiken .simg{
+    width: 600px;
+    height: 400px;
+    margin-top: 75px;
+}
+.chiken .simg img{
+    width: 600PX;
+    height: 400px;
+}
+/* 猪脚饭 */
+.rice{
+    height: 800px;
+    /* background-color: cyan; */
+}
+.rice .rright .pro1{
+    width: 600px;
+    height: 500px;
+}
+.rice .rright .pro2{
+    width: 300px;
+    height: 200px;
+}
+.rice .rleft .pic4 {
+    width: 600px;
+    position: relative;
+}
+.rice .rleft .pic4 li{
+    float: left;
+    width: 300px;
+    /* height: 250px; */
+    /* margin-bottom:250px;  */
+    padding-left: 10px;
+
+}
+.rice .rleft .pic4 li:nth-of-type(3){
+    position: absolute;
+    bottom: -740px;
+    height: 250px;
+}
+
+/* .rice  .trans{
+    height: 100px;
+    
+}  */
+/* 甜品介绍 */
+.lest{
+	 width: 1200px; 
+	height: 714px; 
+	position: relative;
+    background:#fbedd6;
+    margin: 0 auto;
+	
+}
+
+
+
+
+
+
+.box1,.box2,.box3,.box4,.box5,.box7,.box6,.box8,.box9{
+	width: 400px;
+	height: 228px;
+	float: left;
+	margin: 0 15px 15px 0;
+	overflow: hidden;
+	position: absolute;	
+}
+.box1{
+	top: 0;
+	left: 0;
+}
+.box2{
+	top: 0;
+	left: 405px;
+}
+.box3{
+	top: 0;
+	left: 810px;
+}
+
+.box4{
+	top: 243px;
+	left: 0;
+}
+.box5{
+	top: 243px;
+	left: 405px;
+}
+.box6{
+	top: 243px;
+	left: 810px;
+}
+.box7{
+	top: 486px;
+	left: 0;
+}
+.box8{
+	top: 486px;
+	left: 405px;
+}
+.box9{
+	top: 486px;
+	left: 810px;
+}
+/* 光标特效 */
+canvas{
+    margin: 0;
+    padding: 0;
+    display: block; 
+    touch-action: none; 
+  }

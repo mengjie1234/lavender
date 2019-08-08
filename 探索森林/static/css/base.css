@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+h1,h2,h3,h4,h5,h6,p,span,font{
+    font-size: 14px;
+    font-family: "宋体";
+}
+.color-white{
+    color:#fff;
+}
+.color-block{
+    color:#000;
+}
+.color-purple{
+    color:#7C4697;
+}
+.color-pink {
+    color:pink;
+}
+/* body{
+    height: 8000px;
+} */
+.centerX {
+    text-align: center;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.italic{
+    font-style: "Shadows Into Light","微軟正黑體";
+    font-weight:"blod";  
+}
+.oblique {
+    font-style:italic;
+}

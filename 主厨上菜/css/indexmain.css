@@ -1,0 +1,162 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+.main{
+    width: 690px;
+    height: 1000px;
+    margin: 0 auto;
+    /* background-color: cyan; */
+}
+.main .btn{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom:100px; 
+}
+.main .btn p{
+    font-size: 16px;
+    font-family:  "Shadows Into Light", "微軟正黑體";
+    font-style: oblique;
+    letter-spacing: 2px;
+}
+.main .menu{
+    height: 200px;
+    /* background-color: pink; */
+    text-align: center;
+    
+}
+.main .menu h3{
+    font-size: 36px;
+    color: #7C4697;
+}
+.main .menu h4{
+    background-size: cover;
+    color: #fff;
+    font-family: "Shadows Into Light", "微軟正黑體";
+    margin: 5px auto 25px;
+    width: 91px;
+    letter-spacing: 2px;
+    background-color: #7C4697;
+    border-radius: 10px;
+}
+.main .menu p{
+    margin-top: 36px;
+    color: #666;
+    font-size: 10px;
+    line-height: 23px;
+}
+.main .circle{
+    /* background-color: pink; */
+    height: 200px;
+}
+.main .circle li{
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+    position: relative;
+    float: left;
+}
+/* .main .circle li a{
+    display:block;
+    width: 200px;
+    height: 200px;
+    background: url(images/forest_list_now.svg) no-repeat;
+    background-size: cover;
+} */
+.circle .centerpic{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform:translate(-50%);
+    text-align: center;
+}
+.circle .centerpic p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7C4697;
+}
+.circle .reverse{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: #7C4697;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.circle .reverse .smallpic{
+    width: 80px;
+    height: 80px;
+    margin: 40px auto;
+    margin-bottom:0px; 
+
+
+}
+.circle .reverse h5{
+    font-size: 16px;
+    color: #fff;
+
+}
+.circle .reverse h6{
+    font-size: 14px;
+    font-family:"宋体";
+    letter-spacing: 2px;
+    color: #fff;
+}
+.main .arrow{
+    height: 300px;
+    width: 300px;
+    /* background-color:pink; */
+    margin: 0 auto;
+    position: relative;
+    margin-top:20px; 
+}
+.arrow .line{
+    width: 1px;
+    height: 100px;
+    border: 1px dashed #7C4697;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.arrow .left,
+.arrow .right{
+    margin: 30px;
+    opacity: 0.5;
+    
+}
+/* .arrow .left:hover,
+.arrow .right:hover{
+    margin: 30px 0px;
+    opacity: 1;
+} */
+.arrow .yuan{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #7C4697;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+canvas{
+    margin: 0;
+    padding: 0;
+    display: block; 
+    touch-action: none; 
+    /* z-index: 999; */
+    /* height:1000px ; */
+  }
+  
+
+
+

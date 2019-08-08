@@ -1,0 +1,620 @@
+/* ----------------------------top */
+body{
+    letter-spacing: 1px;
+}
+.top{
+z-index: 1;
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+/* overflow: hidden; */
+background-color: #7C4697;
+}
+.top .forst-head{
+position: relative;
+height: 140px;
+
+}
+.top .forst-head .left{
+    position: absolute;
+    top: 45px;
+    left: 90px;
+}
+.top .forst-head .left li{
+    float: left;
+}
+.top .forst-head  .one{
+    width: 21px;
+    height: 21px;
+    margin-right: 20px;
+}
+.top .forst-head  .three,
+.top .forst-head  .four{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 8px;
+    background-color: #fff;
+    padding: 0 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.top .forst-head  .three:hover{
+    padding: 0 40px;
+}
+.top .forst-head  .four:hover{
+    padding: 0 40px;
+}
+.top .forst-head  .mid{
+    width: 74px;
+    height: 97.5px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.top .forst-head .right{
+    position: absolute;
+    top: 45px;
+    right:90px;
+}
+
+.top .forst-head .right li{
+    float: left;
+     margin-right: 20px;
+    font-size: 12px;
+}
+.top .wave {
+    width: 100%;
+    height: 40px;
+   position: absolute;
+   left: 0px;
+   top: 140px;
+  display: block;
+   overflow: hidden;
+   /* display: none; */
+} 
+
+.forst-dream{
+height: 140px;
+width: 100%;
+background-color: #7C4697;
+text-align: center;
+position: absolute;
+top: 140px;
+left: 0;
+display: none;
+
+}
+.forst-dream ul {
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.forst-dream ul li{
+    box-sizing: border-box;
+    float: left;
+    margin-right: 30px;
+}
+
+
+/* ----------------深林漫游 */
+.forst-play{
+    height: 722px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #7C4697;
+    background: url(../images/forest_index_line.svg) center 500px no-repeat rgb(241 233 241);
+    margin-top: 140px;
+    padding-top: 60px;
+    box-sizing:border-box;
+    position: relative;
+}
+.forst-play .one{
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.forst-play .one .first{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.forst-play .one p{
+    line-height: 20px;
+}
+.forst-play .three{
+    width: 100%;
+    height: 110px;
+    /* line-height: 110px; */
+    max-width: 950px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: pink; */
+}
+.forst-play .three li {
+    width: 110px;
+    height: 110px;
+    /* border-radius: 55px; */
+    float: left;
+    margin: 0 60px;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    position: relative;
+
+}
+.forst-play .three li a .new {
+    overflow: hidden;
+    display: none;
+    width: 100px;
+    height: 100px;
+    background: url(../picture/f_icon_j.png) no-repeat center center;
+    border-radius: 50px;
+    background-size: 100px;
+
+}
+.forst-play .three li a .pic2 {
+    background: url(../picture/f_icon_m.png)
+}
+.forst-play .three li a .pic3{
+        width: 110px;
+        height: 110px;
+        border-radius: 55px;
+        background-color:#7C4697;
+        padding-top: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        box-sizing: border-box;
+}
+.forst-play .three li a .pic4 {
+    background: url(../picture/f01_pic.png)
+}
+
+/* .forst-play .three li a .new .line{
+    width: 110px;
+    height: 110px;
+} */
+.forst-play .three li .new .line{
+    /* opacity: 0; */
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+   top: 10px;
+   left: 10px;
+}
+.forst-play .three li .old{
+    opacity: 1;
+    /* padding-top: 5px; */
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    transition-duration: 0.5s;
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    
+}
+.forst-play .three .prev{
+    position: absolute;
+    top:50%;
+    left: 0px;
+    transform: translateY(-50%);
+}
+.forst-play .three .next{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%)
+}
+
+
+/* ---逛逛薰衣草森林 */
+.forst-walk {
+    background: url(../images/forest_big_01.png) no-repeat center center;
+    background-size: 100%;
+    height: 722px;
+    position: relative;
+    width: 100%;
+    /* padding-top: 722px; */
+}
+.forst-walk .smell {
+    /* width: 372px; */
+    width: 100%;
+    height:302px;
+    text-align: center;
+    background: url(../images/forest_big_txt_bg.svg) no-repeat center center;
+    /* font-size: 20px; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:60px;
+    padding-top: 250px;
+}
+.forst-walk .smell .more{
+    font-size: 30px;
+}
+ .forst-walk .wave-down {
+    
+     position: absolute;
+     width: 100%;
+     left: 0px;
+     bottom: -44px;
+     overflow: hidden;
+
+ }
+ /*   台中新社店 */
+ .forst-family {
+     height: 890px;
+     width: 100%;
+     text-align: center;
+     box-sizing: border-box;
+
+     /* padding-bottom: 150px; */
+     /* background-color: pink; */
+     border-top: 1px solid #000;
+  
+ }
+ .forst-family-first {
+     height: 150px;
+     padding-top: 50px;
+ }
+ .forst-family-first .new {
+     font-size: 36px;
+     font-weight: 400;
+     margin-bottom: 10px;
+ }
+ .forst-family-first p{
+     line-height: 20px;
+ }
+
+ .forst-family-two  {
+     width: 1260px;
+     height: 300px;
+     /* left: -825px; */
+     position: relative;
+     /* top: 0px; */
+     margin: 50px auto 0;
+     overflow: hidden;
+     /* background-color: pink; */
+     margin-bottom: 30px;
+     
+ }
+ .forst-family-two ul {
+   position: relative;
+   left: -180px;
+ }
+ .forst-family-two ul li{
+    width: 180px; 
+    height: 192px;
+    position: absolute;
+    text-align: center;
+  
+ }
+/* .change {
+     width: 500px;
+     height: 500px;
+     border-radius: 250px;
+     border:1px solid #7C4697;
+ } */
+ .forst-family-two ul li a{
+     display: inline-block;
+     width: 180px;
+     height: 194px;
+ }
+ .forst-family-two ul li img{
+     width: 180px;
+     height: 134px;
+ }
+ .forst-family-three  {
+     position: relative;
+ }
+.forst-family-three .happines{
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 400;
+
+}
+.forst-family-three p{
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+ /* .forst-family-three .package{
+     position: absolute;
+     bottom: 30px;
+ } */
+ /* -----------------打包浪漫 */
+ .forst-romance {
+     /* background-color: #7C4697; */
+     width: 100%;
+     height: 1000px;
+     padding-top: 150px;
+     box-sizing: border-box;
+     text-align: center;
+     position: relative;
+     background: url(../picture/forest_store_bg.svg) no-repeat center center #7C4697;
+ }
+ .forst-romance .mid {
+     height: 264px;
+     width: 520px;
+     /* padding-top: 120px; */
+     box-sizing: border-box;
+     /* background-color: lime; */
+     position: absolute;
+     transform: translateX(-50%);
+     left: 50%;
+
+ }
+ .forst-romance .happines{
+     font-size: 36px;
+     margin-bottom: 20px;
+ }
+ .forst-romance .tale{
+     line-height: 20px;
+     height: 20px;
+     margin-bottom: 10px;
+ }
+ .forst-romance .island{
+     width: 104px;
+     height: 104px;
+     background: url(../picture/forest_list_now.svg) no-repeat center center;
+     margin-top: 50px;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     text-align: center;
+     padding-top: 30px;
+ }
+
+ .forst-romance .chef{
+     width: 100%;
+     text-align: center;
+     position: absolute;
+     bottom: 50px;
+     left: 50%;
+     transform: translate(-50%);
+ }
+ /*   主廚上菜了 */
+.forst-greens {
+    height: 722px;
+    position: relative;
+    box-sizing: border-box;
+    background: url(../images/forest_eat_bg.svg) no-repeat center center rgb(235, 223, 238);
+} 
+.forst-greens .mid {
+    max-width: 520px;
+    padding-top: 120px;
+    width: 100%;
+    margin: 0 auto;
+    text-align:center;
+}
+.forst-greens .mid .happines {
+    font-size: 36px;
+    padding-bottom: 20px;
+
+}
+.forst-greens .mid p{
+    line-height: 22px;
+    opacity: .5;
+}
+.forst-greens .mid .look{
+    width: 152px;
+    height: 157px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: url(../images/forest_menu_btn.svg) no-repeat center center;
+}
+.forst-greens .knowledge{
+    opacity:1;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    margin: 0 auto;
+     bottom: 50px;
+}
+/* -------------园区咨询.  */
+.forst-counsel {
+    width: 100%;
+    height: 955px;
+    overflow: hidden;
+    background: url(../picture/forest_loca.svg)no-repeat center bottom;
+    padding-top: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+.forst-counsel .cloud{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%)
+}
+.forst-counsel .mid{
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.forst-counsel .mid .yeard{
+    font-size: 28px;
+    line-height: 55px;
+
+}
+.forst-counsel .mid .yeard span{
+    font-size: 28px;
+    
+}
+.forst-counsel .mid  h4{
+  line-height: 42px;
+     
+}
+.forst-counsel .mid p{
+    color:#000; 
+    opacity:  0.6;
+    font-size:  14px; 
+    line-height: 21px;
+}
+.forst-counsel .mid h3{
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400; 
+    color: #000; 
+    opacity: 0.8;
+
+}
+.forst-counsel h6{
+     background: url(../images/forest_loca_btn.svg)no-repeat;
+     position: absolute;
+     top:350px;
+     left: 780px;
+     width: 109px;
+      height: 114px;
+      color:#fff;
+      text-align: center;
+      /* font-weight: 400; */
+      padding-top: 30px;
+
+}
+.forst-counsel h6 span{
+    font-size: 14px;
+
+}
+.forst-counsel h6 .more{
+    font-size: 8px;
+    font-family: "Shadows Into Light", "微軟正黑體"
+}
+.forst-counsel .goTop{
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+    width: 100%;
+}
+.forst-counsel .line1{
+position: absolute;
+bottom: -2px;
+left: 0px;
+width: 100%;
+height: 62px;
+overflow: hidden;
+background: url(../picture/wave_up_04.svg) no-repeat;
+}
+.forst-counsel .line2 {
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    overflow:hidden;
+    width: 100%;
+    height: 36px;
+    background: url(../picture/wave_line.svg) no-repeat;
+}
+
+/*   ----------------foot */
+.foot{
+    width: 100%;
+    /* display: inline-block; */
+    height: 262px;
+    background: #7C4697;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #7C4697;
+      /* margin: 0 auto; */
+}
+.foot .foot-m{
+    /* text-align: center;  */
+    padding: 20px 0px 15px 0px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+
+}
+.foot .foot-m li{
+    float: left;
+    margin: 0px 25px;
+}
+.foot .foot-m li a{
+    font-size: 18px;
+
+}
+.foot .foot-m li a:hover{
+    color:#66CC99
+}
+.foot .foot-n {
+    padding: 0  0 20px 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top:50px;
+
+}
+.foot .foot-n li{
+    float: left;
+    padding: 0 15px;
+    font-size: 14px;
+    color:#fff; 
+    text-align:center; 
+    border-right:1px solid #fff;
+
+}
+.foot .foot-n .last{
+    border-right:none; 
+}
+.foot .foot-n li:hover{
+    letter-spacing: 2px;
+}
+.foot .foot-n li a{
+  
+    color: #fff;
+}
+.foot .foot-d{
+    position: absolute;
+    top: 100px; 
+    left: 50%; 
+   transform:translate(-50%); 
+    padding: 0 0 20px 0;
+    text-align:center; 
+
+
+
+}
+.foot .foot-d li{
+    line-height: 21px;
+    font-size: 12px; 
+    color:#FFF; 
+    text-align:left;
+    float: left;
+    opacity: 0.5;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right:1px solid #fff;
+}
+.foot .foot-t{
+    display:inline-block; 
+    color:#BDA3CB;
+   border:1px solid #966BAC; 
+    border-radius: 14px;
+    padding: 5px 30px;
+    /* margin-bottom: 20px; */
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translate(-50%)
+}
+.foot .foot-t span{
+    color:#fff; 
+}
